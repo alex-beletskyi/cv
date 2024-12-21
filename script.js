@@ -1,6 +1,6 @@
 document.getElementById('language-toggle').addEventListener('click', function () {
   const currentFlag = this.getAttribute('src');
-  const basePath = window.location.origin + '/project-name/'; // Replace 'project-name' with your actual GitHub Pages project name
+  const basePath = window.location.origin + '/alex-beletskyi-cv/';
 
   if (currentFlag.includes('german_flag.png')) {
     // Switch to German
@@ -18,7 +18,7 @@ document.getElementById('language-toggle').addEventListener('click', function ()
 window.addEventListener('load', function () {
   const currentPage = window.location.pathname;
   const flagImg = document.getElementById('language-toggle');
-  const basePath = window.location.origin + '/project-name/';
+  const basePath = window.location.origin + '/alex-beletskyi-cv/';
 
   if (currentPage.includes('index-de.html')) {
     flagImg.setAttribute('src', basePath + 'images/flags/british_flag.png');
