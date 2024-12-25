@@ -1,6 +1,6 @@
 document.getElementById('language-toggle').addEventListener('click', function () {
   const currentFlag = this.getAttribute('src');
-  const basePath = 'https://webrainx.github.io/alex-beletskyi-cv/';
+  const basePath = 'https://alex-beletskyi.github.io/cv/';
 
   if (currentFlag.includes('german_flag.png')) {
     this.setAttribute('src', basePath + 'images/flags/british_flag.png'); 
@@ -16,7 +16,7 @@ document.getElementById('language-toggle').addEventListener('click', function ()
 window.addEventListener('load', function () {
   const currentPage = window.location.pathname;
   const flagImg = document.getElementById('language-toggle');
-  const basePath = 'https://webrainx.github.io/alex-beletskyi-cv/';
+  const basePath = 'https://alex-beletskyi.github.io/cv/';
 
   if (currentPage.includes('index-de.html')) {
     flagImg.setAttribute('src', basePath + 'images/flags/british_flag.png');
